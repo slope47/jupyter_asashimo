@@ -16,6 +16,3 @@ RUN conda install --quiet --yes \
     'matplotlib=2.1.*' \
     && conda clean -tipsy && \
     fix-permissions $CONDA_DIR
-
-# Install Sample Notebook
-COPY sample_notebook/CavityFlow_with_Navier-Stokes.ipynb /home/$NB_USER/
